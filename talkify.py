@@ -16,8 +16,9 @@ with open(sys.argv[1]) as f:
                 slide = dict()
                 slide["points"] = []
             slide["title"] = l
-            if any(l.lower().endswith(suffix) for suffix in image_suffixes):
-                slide["image"] = l
+            if any(l.split(" ")[0].lower().endswith(suffix) for suffix in image_suffixes):
+                slide["image"] = l.split(" ")[0]
+                slide["caption"] = l.split(" ", 1)[1]
     if "title" in slide:
         slides.append(slide)
 print """
@@ -40,6 +41,8 @@ html {
 }
 body {
     font-family: Montserrat, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 #image {
     display: none;
@@ -48,10 +51,19 @@ body {
     left: 0;
     width: 100%;
 }
+#caption {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 1em;
+	background: white;
+	font-size: 150%;
+}
 #title {
     color: #4799c8;
-    font-size: 450%;
-    margin-top: 8vw;
+    font-size: 400%;
+    margin-top: 6vw;
     margin-bottom: 1em;
     margin-left: 10%;
     margin-right: 10%;
@@ -82,10 +94,13 @@ function showSlide() {
         document.getElementById("title").innerHTML = "";
         document.getElementById("image").src = slides[index].image;
         document.getElementById("image").style.display = "block";
+        document.getElementById("caption").innerHTML = slides[index].caption;
+        document.getElementById("caption").style.display = "block";
     } else {
         document.getElementById("title").innerHTML = slides[index].title;
         document.getElementById("image").src = "";
         document.getElementById("image").style.display = "none";
+        document.getElementById("caption").style.display = "none";
     }
     document.getElementById("points").innerHTML = slides[index].points.map(function(p) {
         return "<li>" + p + "</li>";
@@ -116,7 +131,11 @@ function keyup(event) {
 </script>
 </head>
 <body onClick="next()" onKeyUp="keyup(event)">
+<div style="width: 100%; height: 89px; background-color: #4799c8;">
+<img src="sgh.png" style="position: fixed; top: 10px; left: 10px; height: 69px;">
+</div>
 <img id="image">
+<div id="caption"></div>
 <div id="title"></div>
 <ul id="points"></ul>
 <script>

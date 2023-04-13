@@ -15,6 +15,8 @@ html {
 }
 body {
     font-family: Montserrat, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 #image {
     display: none;
@@ -23,10 +25,19 @@ body {
     left: 0;
     width: 100%;
 }
+#caption {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 1em;
+	background: white;
+	font-size: 150%;
+}
 #title {
     color: #4799c8;
-    font-size: 450%;
-    margin-top: 8vw;
+    font-size: 400%;
+    margin-top: 6vw;
     margin-bottom: 1em;
     margin-left: 10%;
     margin-right: 10%;
@@ -44,7 +55,7 @@ body {
 }
 </style>
 <script>
-var slides = [{"points": ["David Stark", "Gamespace, April 13, 2023"], "title": "Teaching Your Game"}, {"points": ["People have a lot of choice and not a lot of patience", "Quickly bounce off a boring or frustrating start to the game"], "title": "Why do you need to explain your game?"}, {"image": "pa-controls.jpg", "points": [], "title": "pa-controls.jpg"}, {"points": ["Great: \"Oh, I didn't need a tutorial, I just figured it out.\"", "Good: entertaining, teaches you the game", "Bad: feels like work"], "title": "What makes for a good tutorial?"}, {"points": ["<img src=\"flow.png\">"], "title": "Flow State also applies to tutorials"}, {"points": [], "title": "Some Examples"}, {"image": "dishonored1.jpg", "points": [], "title": "dishonored1.jpg"}, {"image": "dishonored2.jpg", "points": [], "title": "dishonored2.jpg"}, {"image": "df.png", "points": [], "title": "df.png"}, {"image": "armello-a.jpg", "points": [], "title": "armello-a.jpg"}, {"image": "armello-b.jpg", "points": [], "title": "armello-b.jpg"}, {"image": "armello-c.jpg", "points": [], "title": "armello-c.jpg"}, {"image": "baba1.jpg", "points": [], "title": "baba1.jpg"}, {"points": ["Introduce each verb/ability/mechanic one by one", "Give it a mechanical and story context where it makes sense", "Let the player try it out, become more comfortable with it", "Challenge the player for advanced / combined use"], "title": "How to do it"}, {"points": ["Do all of this within a story context that does not feel like a tutorial", "No \"your jump jets should now be online, try them out\"", "Don't frontload everything"], "title": "How to do it"}, {"image": "baba1.jpg", "points": [], "title": "baba1.jpg"}, {"image": "baba2.jpg", "points": [], "title": "baba2.jpg"}, {"image": "baba3.jpg", "points": [], "title": "baba3.jpg"}, {"points": ["No.", "You need to understand a lot of mechanics to build a simple airship", "No story context"], "title": "Did I do this in Airships?"}, {"points": ["Classic step-by-step tutorial", "Series of ship design and combat challenges", "Tries to keep you on track"], "title": "What did I do instead?"}, {"image": "airships1.jpg", "points": [], "title": "airships1.jpg"}, {"points": ["Kind of", "It's a slog", "Many people learn from YouTube instead"], "title": "Does this work?"}, {"points": ["Lots of interlocking systems that the player needs to understand how to play", "This is arguably bad game design", "Example: Airships, Armello", "Clearly not the end of the world, these games are successful"], "title": "What if your game is systems-driven?"}, {"points": ["Subset of mechanics that's fast to learn and already fun", "Baba Is You starts out as Sokoban", "Classic move left/right, jump controls"], "title": "Learnable Game Design"}, {"points": ["The basics of movement and combat", "Play cards and navigate the perils of Armello", "Cast spells and manipulate the kingdom's politics", "Defend against the rot, and discover the different paths that lead to victory"], "title": "What does Armello think you need to know?"}, {"points": ["To build a simple airship", "Propulsion, Lift, Crew, Corridor Connections, Weapon Arcs and Exclusions, Access Hatches", "And then there's combat"], "title": "What does Airships need you to know?"}, {"points": ["Introduced a whole lot of new strategy mechanics", "Old strategy tutorial was terrible, gave bad advice", "On-rails tutorial would be a lot of work"], "title": "Airship Tutorial Part 2: The Big Update"}, {"points": ["Advice triggers based on custom code", "Basic hint with option for step-by-step instructions", "Link to manual"], "title": "Advice System"}, {"image": "airships2.jpg", "points": [], "title": "airships2.jpg"}, {"image": "airships3.jpg", "points": [], "title": "airships3.jpg"}, {"image": "airships4.jpg", "points": [], "title": "airships4.jpg"}, {"image": "airships5.jpg", "points": [], "title": "airships5.jpg"}, {"points": ["What happens if trigger no longer valid?", "Don't overwhelm the player", "Not suitable for basics"], "title": "Details"}, {"points": ["Learning needs flow state", "Integrate learning into gameplay and story", "Design learnable games"], "title": "Conclusion"}] ;
+var slides = [{"points": ["David Stark", "Gamespace, April 13, 2023"], "title": "Teaching Your Game"}, {"points": ["People have a lot of choice and not a lot of patience", "Quickly bounce off a boring or frustrating start to the game"], "title": "Why do you need to explain your game?"}, {"caption": "Penny Arcade, June 8, 2007", "image": "pa-controls.jpg", "points": [], "title": "pa-controls.jpg Penny Arcade, June 8, 2007"}, {"points": ["Great: \"Oh, I didn't need a tutorial, I just figured it out.\"", "Good: entertaining, teaches you the game", "Bad: feels like work"], "title": "What makes for a good tutorial?"}, {"points": ["<img src=\"flow.png\">"], "title": "Flow State also applies to tutorials"}, {"points": [], "title": "Some Examples"}, {"caption": "Dishonored, Arkane Studios, 2012", "image": "dishonored1.jpg", "points": [], "title": "dishonored1.jpg Dishonored, Arkane Studios, 2012"}, {"caption": "Dishonored, Arkane Studios, 2012", "image": "dishonored2.jpg", "points": [], "title": "dishonored2.jpg Dishonored, Arkane Studios, 2012"}, {"caption": "Dwarf Fortress, Bay 12 Games, 2006-2023", "image": "df.png", "points": [], "title": "df.png Dwarf Fortress, Bay 12 Games, 2006-2023"}, {"caption": "Armello, League of Geeks, 2015", "image": "armello-a.jpg", "points": [], "title": "armello-a.jpg Armello, League of Geeks, 2015"}, {"caption": "Armello, League of Geeks, 2015", "image": "armello-b.jpg", "points": [], "title": "armello-b.jpg Armello, League of Geeks, 2015"}, {"caption": "Armello, League of Geeks, 2015", "image": "armello-c.jpg", "points": [], "title": "armello-c.jpg Armello, League of Geeks, 2015"}, {"caption": "Baba Is You, Hempuli, 2019", "image": "baba1.jpg", "points": [], "title": "baba1.jpg Baba Is You, Hempuli, 2019"}, {"points": ["Introduce each verb/ability/mechanic one by one", "Give it a mechanical and story context where it makes sense", "Let the player try it out, become more comfortable with it", "Challenge the player for advanced / combined use"], "title": "How to do it"}, {"points": ["Do all of this within a story context that does not feel like a tutorial", "No \"your jump jets should now be online, try them out\"", "Don't frontload everything"], "title": "How to do it"}, {"caption": "Baba Is You, Hempuli, 2019", "image": "baba1.jpg", "points": [], "title": "baba1.jpg Baba Is You, Hempuli, 2019"}, {"caption": "Baba Is You, Hempuli, 2019", "image": "baba2.jpg", "points": [], "title": "baba2.jpg Baba Is You, Hempuli, 2019"}, {"caption": "Baba Is You, Hempuli, 2019", "image": "baba3.jpg", "points": [], "title": "baba3.jpg Baba Is You, Hempuli, 2019"}, {"points": ["No.", "You need to understand a lot of mechanics to build a simple airship", "No story context"], "title": "Did I do this in Airships?"}, {"points": ["Classic step-by-step tutorial", "Series of ship design and combat challenges", "Tries to keep you on track"], "title": "What did I do instead?"}, {"caption": "Airships: Conquer the Skies, David Stark, 2014-2023", "image": "airships1.jpg", "points": [], "title": "airships1.jpg Airships: Conquer the Skies, David Stark, 2014-2023"}, {"points": ["Kind of", "It's a slog", "Many people learn from YouTube instead"], "title": "Does this work?"}, {"points": ["Lots of interlocking systems that the player needs to understand how to play", "This is arguably bad game design", "Example: Airships, Armello", "Clearly not the end of the world, these games are successful"], "title": "What if your game is systems-driven?"}, {"points": ["Subset of mechanics that's fast to learn and already fun", "Baba Is You starts out as Sokoban", "Classic move left/right, jump controls"], "title": "Learnable Game Design"}, {"points": ["The basics of movement and combat", "Play cards and navigate the perils of Armello", "Cast spells and manipulate the kingdom's politics", "Defend against the rot, and discover the different paths that lead to victory"], "title": "What does Armello think you need to know?"}, {"points": ["To build a simple airship", "Propulsion, Lift, Crew, Corridor Connections, Weapon Arcs and Exclusions, Access Hatches", "And then there's combat"], "title": "What does Airships need you to know?"}, {"points": ["Introduced a whole lot of new strategy mechanics", "Old strategy tutorial was terrible, gave bad advice", "On-rails tutorial would be a lot of work"], "title": "Airship Tutorial Part 2: The Big Update"}, {"points": ["Advice triggers based on custom code", "Basic hint with option for step-by-step instructions", "Link to manual"], "title": "Advice System"}, {"caption": "Airships: Conquer the Skies, David Stark, 2014-2023", "image": "airships2.jpg", "points": [], "title": "airships2.jpg Airships: Conquer the Skies, David Stark, 2014-2023"}, {"caption": "Airships: Conquer the Skies, David Stark, 2014-2023", "image": "airships3.jpg", "points": [], "title": "airships3.jpg Airships: Conquer the Skies, David Stark, 2014-2023"}, {"caption": "Airships: Conquer the Skies, David Stark, 2014-2023", "image": "airships4.jpg", "points": [], "title": "airships4.jpg Airships: Conquer the Skies, David Stark, 2014-2023"}, {"caption": "Airships: Conquer the Skies, David Stark, 2014-2023", "image": "airships5.jpg", "points": [], "title": "airships5.jpg Airships: Conquer the Skies, David Stark, 2014-2023"}, {"points": ["What happens if trigger no longer valid?", "Don't overwhelm the player", "Not suitable for basics"], "title": "Details"}, {"points": ["Learning needs flow state", "Integrate learning into gameplay and story", "Design learnable games"], "title": "Conclusion"}] ;
 </script>
 <script>
 var index = 0;
@@ -53,10 +64,13 @@ function showSlide() {
         document.getElementById("title").innerHTML = "";
         document.getElementById("image").src = slides[index].image;
         document.getElementById("image").style.display = "block";
+        document.getElementById("caption").innerHTML = slides[index].caption;
+        document.getElementById("caption").style.display = "block";
     } else {
         document.getElementById("title").innerHTML = slides[index].title;
         document.getElementById("image").src = "";
         document.getElementById("image").style.display = "none";
+        document.getElementById("caption").style.display = "none";
     }
     document.getElementById("points").innerHTML = slides[index].points.map(function(p) {
         return "<li>" + p + "</li>";
@@ -87,7 +101,11 @@ function keyup(event) {
 </script>
 </head>
 <body onClick="next()" onKeyUp="keyup(event)">
+<div style="width: 100%; height: 89px; background-color: #4799c8;">
+<img src="sgh.png" style="position: fixed; top: 10px; left: 10px; height: 69px;">
+</div>
 <img id="image">
+<div id="caption"></div>
 <div id="title"></div>
 <ul id="points"></ul>
 <script>

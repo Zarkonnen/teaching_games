@@ -4,7 +4,7 @@ Teaching Your Game
 Why do you need to explain your game?
 - People have a lot of choice and not a lot of patience
 - Quickly bounce off a boring or frustrating start to the game
-pa-controls.jpg
+pa-controls.jpg Penny Arcade, June 8, 2007
 What makes for a good tutorial?
 - Great: "Oh, I didn't need a tutorial, I just figured it out."
 - Good: entertaining, teaches you the game
@@ -12,13 +12,13 @@ What makes for a good tutorial?
 Flow State also applies to tutorials
 - <img src="flow.png">
 Some Examples
-dishonored1.jpg
-dishonored2.jpg
-df.png
-armello-a.jpg
-armello-b.jpg
-armello-c.jpg
-baba1.jpg
+dishonored1.jpg Dishonored, Arkane Studios, 2012
+dishonored2.jpg Dishonored, Arkane Studios, 2012
+df.png Dwarf Fortress, Bay 12 Games, 2006-2023
+armello-a.jpg Armello, League of Geeks, 2015
+armello-b.jpg Armello, League of Geeks, 2015
+armello-c.jpg Armello, League of Geeks, 2015
+baba1.jpg Baba Is You, Hempuli, 2019
 How to do it
 - Introduce each verb/ability/mechanic one by one
 - Give it a mechanical and story context where it makes sense
@@ -28,9 +28,9 @@ How to do it
 - Do all of this within a story context that does not feel like a tutorial
 - No "your jump jets should now be online, try them out"
 - Don't frontload everything
-baba1.jpg
-baba2.jpg
-baba3.jpg
+baba1.jpg Baba Is You, Hempuli, 2019
+baba2.jpg Baba Is You, Hempuli, 2019
+baba3.jpg Baba Is You, Hempuli, 2019
 Did I do this in Airships?
 - No.
 - You need to understand a lot of mechanics to build a simple airship
@@ -39,7 +39,7 @@ What did I do instead?
 - Classic step-by-step tutorial
 - Series of ship design and combat challenges
 - Tries to keep you on track
-airships1.jpg
+airships1.jpg Airships: Conquer the Skies, David Stark, 2014-2023
 Does this work?
 - Kind of
 - It's a slog
@@ -70,10 +70,10 @@ Advice System
 - Advice triggers based on custom code
 - Basic hint with option for step-by-step instructions
 - Link to manual
-airships2.jpg
-airships3.jpg
-airships4.jpg
-airships5.jpg
+airships2.jpg Airships: Conquer the Skies, David Stark, 2014-2023
+airships3.jpg Airships: Conquer the Skies, David Stark, 2014-2023
+airships4.jpg Airships: Conquer the Skies, David Stark, 2014-2023
+airships5.jpg Airships: Conquer the Skies, David Stark, 2014-2023
 Details
 - What happens if trigger no longer valid?
 - Don't overwhelm the player
