@@ -1,0 +1,84 @@
+Teaching Your Game
+- David Stark
+- Gamespace, April 13, 2023
+Why do you need to explain your game?
+- People have a lot of choice and not a lot of patience
+- Quickly bounce off a boring or frustrating start to the game
+pa-controls.jpg
+What makes for a good tutorial?
+- Great: "Oh, I didn't need a tutorial, I just figured it out."
+- Good: entertaining, teaches you the game
+- Bad: feels like work
+Flow State also applies to tutorials
+- <img src="flow.png">
+Some Examples
+dishonored1.jpg
+dishonored2.jpg
+df.png
+armello-a.jpg
+armello-b.jpg
+armello-c.jpg
+baba1.jpg
+How to do it
+- Introduce each verb/ability/mechanic one by one
+- Give it a mechanical and story context where it makes sense
+- Let the player try it out, become more comfortable with it
+- Challenge the player for advanced / combined use
+How to do it
+- Do all of this within a story context that does not feel like a tutorial
+- No "your jump jets should now be online, try them out"
+- Don't frontload everything
+baba1.jpg
+baba2.jpg
+baba3.jpg
+Did I do this in Airships?
+- No.
+- You need to understand a lot of mechanics to build a simple airship
+- No story context
+What did I do instead?
+- Classic step-by-step tutorial
+- Series of ship design and combat challenges
+- Tries to keep you on track
+airships1.jpg
+Does this work?
+- Kind of
+- It's a slog
+- Many people learn from YouTube instead
+What if your game is systems-driven?
+- Lots of interlocking systems that the player needs to understand how to play
+- This is arguably bad game design
+- Example: Airships, Armello
+- Clearly not the end of the world, these games are successful
+Learnable Game Design
+- Subset of mechanics that's fast to learn and already fun
+- Baba Is You starts out as Sokoban
+- Classic move left/right, jump controls
+What does Armello think you need to know?
+- The basics of movement and combat
+- Play cards and navigate the perils of Armello
+- Cast spells and manipulate the kingdom's politics
+- Defend against the rot, and discover the different paths that lead to victory
+What does Airships need you to know?
+- To build a simple airship
+- Propulsion, Lift, Crew, Corridor Connections, Weapon Arcs and Exclusions, Access Hatches
+- And then there's combat
+Airship Tutorial Part 2: The Big Update
+- Introduced a whole lot of new strategy mechanics
+- Old strategy tutorial was terrible, gave bad advice
+- On-rails tutorial would be a lot of work
+Advice System
+- Advice triggers based on custom code
+- Basic hint with option for step-by-step instructions
+- Link to manual
+airships2.jpg
+airships3.jpg
+airships4.jpg
+airships5.jpg
+Details
+- What happens if trigger no longer valid?
+- Don't overwhelm the player
+- Not suitable for basics
+Conclusion
+- Learning needs flow state
+- Integrate learning into gameplay and story
+- Design learnable games
